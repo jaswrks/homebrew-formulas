@@ -4,13 +4,6 @@ class Unison248 < Formula
   url "https://github.com/bcpierce00/unison/archive/v2.48.15v4.tar.gz"
   sha256 "f8c7e982634bbe1ed6510fe5b36b6c5c55c06caefddafdd9edc08812305fdeec"
 
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "1622a673b2bc8ef6d00dd754c26cfd3d5f737ed1dc48a46bbce486fa0f766181" => :high_sierra
-    sha256 "fd00605490100ec224f5d86a79da341ce639e1d0772fb48cc133672d1bc2a812" => :sierra
-    sha256 "53c945e143961a5d158a36980664d5be7153b84074bfa4220eee2db35404b7d3" => :el_capitan
-  end
-
   depends_on "ocaml" => :build
 
   def install
